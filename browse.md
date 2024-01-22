@@ -10,12 +10,12 @@
 $(document).ready(function() {
 var table = $('#browse-table').DataTable({
   "dom": '<"search"f><"top"il>rt<"bottom"Bp><"clear">',
-  "columnDefs": [ 
-     { "targets": 4, "visible": false }
-  ],
   language: { search: '', searchPlaceholder: "Search project..." },
   buttons: [
         'copy', 'excel', 'pdf'
+  ],
+  "columnDefs": [ 
+     { "targets": 4, "visible": false }
   ],
   "order": [[ 0, "desc" ]]
   });
