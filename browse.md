@@ -3,7 +3,7 @@
 {:#browse-table .display}
 | ID | Name | Instructors | Description |
 |:--------:|:--------:|:---------:|:---------:|:---------:|:---------:|
-{% for item in site.tabledata %}| {{ item.id }} | [{{ item.title }}]({{ item.path }}) | {{ item.instructors | split: " " | last}} {{ item.instructors | split: " " | first | slice: 0}}. | {{ item.description }} |
+{% for item in site.data.tabledata %}| {{ item.id }} | [{{ item.title }}]({{ item.path }}) | {{ item.instructors | split: " " | last}} {{ item.instructors | split: " " | first | slice: 0}}. | {{ item.description }} |
 {% endfor %}
 
 <script>
