@@ -10,6 +10,12 @@
 $(document).ready(function() {
 var table = $('#browse-table').DataTable({
   "dom": '<"search"f><"top"il>rt<"bottom"Bp><"clear">',
+  columnDefs: [
+     {
+        target: 4,
+        visible: false
+     }
+  ],
   language: { search: '', searchPlaceholder: "Search project..." },
   buttons: [
         'copy', 'excel', 'pdf'
