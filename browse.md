@@ -1,9 +1,9 @@
 # Test table
 
 {:#browse-table .display}
-| ID | Name | Instructors | Description |
-|:--------:|:--------:|:---------:|:---------:|:---------:|:---------:|
-{% for item in site.data.tabledata %}| {{ item.id }} | [{{ item.title }}]({{ item.path }}) | {{ item.instructors | split: " " | last}} {{ item.instructors | split: " " | first | slice: 0}}. | {{ item.description }} |
+| ID | Name | Instructors | Description | Actions |
+|:--------:|:--------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+{% for item in site.data.tabledata %}| {{ item.id }} | [{{ item.title }}]({{ item.path }}) | {{ item.instructors | split: " " | last}} {{ item.instructors | split: " " | first | slice: 0}}. | {{ item.description }} | {{ item.actions }}
 {% endfor %}
 
 <script>
