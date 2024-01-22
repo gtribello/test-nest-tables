@@ -3,18 +3,22 @@
   path: lessons/23/004/data/NAVIGATION.html
   instructors: Daniele Rapetti
   description: How I reimplemented a basic version of the CV Coordination with cuda
+  actions: DISTANCE, ANGLES, TORSION
 - id: '23.002'
   title: Introduction to the plumed parallel features avaiable to the developers
   path: lessons/23/002/data/NAVIGATION.html
   instructors: Daniele Rapetti
   description: A simple presentation of some of the avaiable features in plumed to simplify the interface with OpenMP and MPI. The lesson contains also a very simple example in how to implement a  cuda CV.
+  actions: ANGLES, TORSIONS, METAD
 - id: '22.013'
   title: SASA module - The solvent accessible surface area of proteins as a collective variable, and the application of PLUMED for implicit solvent simulations
   path: lessons/22/013/data/NAVIGATION.html
   instructors: Andrea Arsiccio
   description: An introduction to the SASA module and a description of how PLUMED can be used for implicit solvent simulations.
+  actions: TORSIONS, RESTRAINT
 - id: '22.010'
   title: Hamiltonian replica exchange with PLUMED and GROMACS
   path: lessons/22/010/data/NAVIGATION.html
   instructors: Giovanni Bussi
   description: An introduction to running Hamiltonian replica exchange calculations using PLUMED and GROMACS.
+  actions: METAD
