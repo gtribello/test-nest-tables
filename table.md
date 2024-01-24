@@ -2,18 +2,15 @@
 
 {% assign actionlist = site.data.syntax | map: "name" %}
 
+{{ actionlist }}
+
 {% for item in site.data.tabledata %}
    {% assign actions = item.actions | split: ", " %}
    {% for a in actions %}
       {% assign act=a | strip %} 
       {% for s in site.data.syntax %}
-         {{ s.name }} 
-         {{ act }}
-         {% if act contains s.name %} 
+         {% if act==s.name %} 
              {% assign s.number=s.number | plus: 1 }
-             {{ act }}
-             {{ s.name }}
-             {{ s.number }}  
              {% break %}
          {% else %}
              {% continue %} 
