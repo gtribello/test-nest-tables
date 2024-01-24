@@ -1,4 +1,3 @@
-- allactions: "DISTANCE", "ANGLES", "TORSION", "TORSIONS", "METAD", "TORSIONS", "RESTRAINT"
 - name: DISTANCE
 - name: ANGLES
 - name: TORSION
