@@ -1,12 +1,11 @@
 # Table showing action usage
 
 {% assign actionlist = site.data.syntax | map: "name" %}
-{{ actionlist }}
 
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
-var xValues = [ {{ actionlist | join: ", " }} ];
+var xValues = [ {{ actionlist | join: "\", \"" | prepend: "\"" | append: "\"" }} ];
 var yValues = [3, 7, 8, 4, 5, 2, 0];
 var barColors = "red";
 
