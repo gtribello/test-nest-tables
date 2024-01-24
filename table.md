@@ -3,6 +3,7 @@
 {% assign actionlist = site.data.syntax | map: "name" %}
 
 {% for item in site.data.tabledata %}
+   {{ item.actions }}
    {% assign actions = item.actions | split: ", " %}
    {% for act in actions %}
       {% for s in site.data.syntax %}
