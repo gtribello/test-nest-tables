@@ -4,7 +4,8 @@
 
 {% for item in site.data.tabledata %}
    {% assign actions = item.actions | split: ", " %}
-   {% for act in actions %}
+   {% for a in actions %}
+      {% assign act=a | strip %} 
       {% for s in site.data.syntax %}
          {{ s.name }} 
          {{ act }}
