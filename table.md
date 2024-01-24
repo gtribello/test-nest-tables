@@ -6,8 +6,11 @@
    {% assign actions = item.actions | split: ", " %}
    {% for act in actions %}
       {% for s in site.data.syntax %}
-         {% if s.name==act %} 
+         {% if s.name == act %} 
              {% assign s.number=s.number | plus: 1 }
+             {% break %}
+         {% else %}
+             {% continue %} 
          {% endif %}
       {% endfor %} 
    {% endfor %}
