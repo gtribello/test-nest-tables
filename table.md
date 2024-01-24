@@ -11,6 +11,7 @@
    {% assign actions = item.actions | split: ", " %}
    {{ actions }}
    {% for act in actions %}
+      {{ act }}
       {% for s in site.data.syntax %}
          {% if s.name == act %} 
              {% assign s.number=s.number | plus: 1 }
