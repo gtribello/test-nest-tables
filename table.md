@@ -1,6 +1,6 @@
 # Table showing action usage
 
-{% assign actionlist = site.data.syntax | map: "name" %}
+{% assign actionlist = site.data.actionlist | map: "name" %}
 
 {% for item in site.data.tabledata %}
    {{ item.actions }}
@@ -8,7 +8,8 @@
    {{ acts }}
    {% for a in acts %}
       {% assign act=a | strip %} 
-      {% for s in site.data.syntax %}
+      {% for s in site.data.actionlist %}
+         {{ s }}
          {% if act==s.name %} 
              {% assign s.number=s.number | plus: 1 }
              {% break %}
