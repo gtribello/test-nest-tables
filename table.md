@@ -6,6 +6,7 @@
    {% assign actions = item.actions | split: ", " %}
    {% for act in actions %}
       {{ act }}
+      {{ site.data.syntax }}
       {% for s in site.data.syntax %}
          {{ s }} 
          {% if s.name == act %} 
