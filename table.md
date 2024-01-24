@@ -7,7 +7,7 @@
    {% for act in actions %}
       {% for s in site.data.syntax %}
          {% if s.name==act %} 
-             {% assign s.number | plus: 1 }
+             {% assign s.number=s.number | plus: 1 }
          {% endif %}
       {% endfor %} 
    {% endfor %}
