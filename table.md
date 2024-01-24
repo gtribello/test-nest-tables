@@ -1,7 +1,7 @@
 # Table showing action usage
 
 {% assign actionlist = site.data.syntax | map: "name" %}
-{% actionlist | join: "and" %}
+{{ actionlist }}
 
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
