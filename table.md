@@ -3,10 +3,10 @@
 {% assign actionlist = site.data.syntax | map: "name" %}
 
 {% for item in site.data.tabledata %}
+   {{ item.actions }}
    {% assign actions = item.actions | split: ", " %}
    {% for a in actions %}
       {% assign act=a | strip %} 
-      {{ a }}
       {% for s in site.data.syntax %}
          {% if act==s.name %} 
              {% assign s.number=s.number | plus: 1 }
