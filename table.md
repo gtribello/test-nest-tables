@@ -8,6 +8,9 @@
       {% for s in site.data.syntax %}
          {% if s.name == act %} 
              {% assign s.number=s.number | plus: 1 }
+             {{ act }}
+             {{ s.name }}
+             {{ s.number }}  
              {% break %}
          {% else %}
              {% continue %} 
