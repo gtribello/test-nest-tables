@@ -2,17 +2,12 @@
 
 {% assign actionlist = site.data.syntax | map: "name" %}
 
-{% assign dd = site.data.tabledata | map: "actions" %}
-
-{{ dd }}
-
 {% for item in site.data.tabledata %}
-   {{ item.actions }}
    {% assign actions = item.actions | split: ", " %}
-   {{ actions }}
    {% for act in actions %}
       {{ act }}
       {% for s in site.data.syntax %}
+         {{ s }} 
          {% if s.name == act %} 
              {% assign s.number=s.number | plus: 1 }
              {{ act }}
