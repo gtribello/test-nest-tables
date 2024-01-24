@@ -5,10 +5,9 @@
 {% for item in site.data.tabledata %}
    {% assign actions = item.actions | split: ", " %}
    {% for act in actions %}
-      {{ act }}
-      {{ site.data.syntax }}
       {% for s in site.data.syntax %}
-         {{ s }} 
+         {{ s.name }} 
+         {{ act }}
          {% if s.name == act %} 
              {% assign s.number=s.number | plus: 1 }
              {{ act }}
