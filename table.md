@@ -7,8 +7,9 @@
 {{ dd }}
 
 {% for item in site.data.tabledata %}
-   {{ item }}
+   {{ item.actions }}
    {% assign actions = item.actions | split: ", " %}
+   {{ actions }}
    {% for act in actions %}
       {% for s in site.data.syntax %}
          {% if s.name == act %} 
