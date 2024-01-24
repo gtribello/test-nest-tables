@@ -2,11 +2,25 @@
 
 {% assign actionlist = site.data.syntax | map: "name" %}
 
+{% for item in site.data.tabledata %}
+   {% assign actions = item.actions | split: ", " %}
+   {% for act in actions %}
+      {% for s in site.data.syntax %}
+         {% if s.name==act %} 
+             {% assign s.number | plus: 1 }
+         {% endif %}
+      {% endfor %} 
+   {% endfor %}
+{% endfor %}
+
+{% assign actionnumber = site.data.syntax | map: "number" %}
+
+
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
 var xValues = [ {{ actionlist | join: '", "' | prepend: '"' | append: '"' }} ];
-var yValues = [3, 7, 8, 4, 5, 2, 0];
+var yValues = [ {{ actionnumber | join: "," }} ];
 var barColors = "red";
 
 new Chart("myChart", {
