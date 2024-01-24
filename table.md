@@ -2,8 +2,12 @@
 
 {% assign actionlist = site.data.syntax | map: "name" %}
 
+{% assign dd = site.data.tabledata | map: "actions" %}
+
+{{ dd }}
+
 {% for item in site.data.tabledata %}
-   {{ item.actions }}
+   {{ item }}
    {% assign actions = item.actions | split: ", " %}
    {% for act in actions %}
       {% for s in site.data.syntax %}
