@@ -1,10 +1,12 @@
 # Table showing action usage
 
+{% assign allactions = site.data.syntax | map: "name" | join ", " %}
+
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
-var xValues = ["DISTANCE", "ANGLES", "METAD", "COM", "BIASVALUE"];
-var yValues = [3, 7, 8, 4, 5];
+var xValues = [ {{ allactions }} ];
+var yValues = [3, 7, 8, 4, 5, 2, 0];
 var barColors = "red";
 
 new Chart("myChart", {
@@ -17,6 +19,7 @@ new Chart("myChart", {
     }]
   },
   options: {
+    maintainAspectRatio: false,
     legend: {display: false},
     title: {
       display: true,

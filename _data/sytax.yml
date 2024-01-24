@@ -1,0 +1,8 @@
+- allactions: "DISTANCE", "ANGLES", "TORSION", "TORSIONS", "METAD", "TORSIONS", "RESTRAINT"
+- name: DISTANCE
+- name: ANGLES
+- name: TORSION
+- name: TORSIONS
+- name: METAD
+- name: TORSIONS
+- name: RESTRAINT
