@@ -9,7 +9,7 @@
       {% for s in site.data.syntax %}
          {{ s.name }} 
          {{ act }}
-         {% if s.name == act %} 
+         {% if act contains s.name %} 
              {% assign s.number=s.number | plus: 1 }
              {{ act }}
              {{ s.name }}
