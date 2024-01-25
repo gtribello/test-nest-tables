@@ -6,7 +6,7 @@
 {% assign nactions=actionno0.size %}
 
 {% for i in (0..nactions) %}
-   {% assign actionno[i]=actionno[i] | plumed actionno1[i] %}  
+   {% assign actionno[i]=actionno[i] | plus actionno1[i] %}  
 {% endfor %}
 
 
