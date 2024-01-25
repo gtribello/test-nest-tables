@@ -2,10 +2,6 @@
 
 {% assign actionlist = site.data.actionlist | map: "name" %}
 
-{% for s in site.data.actionlist %}
-   {{ s.name }}
-{% endfor %}
-
 {% for item in site.data.tabledata %}
    {{ item.actions }}
    {% assign acts = item.actions | split: "," %}
@@ -13,6 +9,7 @@
    {% for a in acts %}
       {% assign act=a | strip %} 
       {% for s in site.data.actionlist %}
+         {{ act, s.name, act==s.name }}
          {% if act==s.name %} 
              {% assign s.number=s.number | plus: 1 }
              {% break %}
