@@ -1,0 +1,14 @@
+- name: DISTANCE
+  number: 0
+- name: ANGLES
+  number: 0
+- name: TORSION
+  number: 0
+- name: TORSIONS
+  number: 0
+- name: METAD
+  number: 0
+- name: TORSIONS
+  number: 0
+- name: RESTRAINT
+  number: 0

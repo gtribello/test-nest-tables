@@ -1,30 +1,20 @@
 # Table showing action usage
 
-{% assign actionlist = site.data.actionlist | map: "name" %}
+{% assign actionlist = site.data.actionlist0 | map: "name" %}
+{% assign actionno = site.data.actionlist0 | map: "number" %}
+{% assign actionno1 = site.data.actionlist1 | map: "number" %}
+{% assign nactions=actionno0.size %}
 
-{% for item in site.data.tabledata %}
-   {% assign acts = item.actions | split: "," %}
-   {% for a in acts %}
-      {% assign act=a | strip %} 
-      {% for s in site.data.actionlist %}
-         {{ act }} {{ s.name }} {{ act == s.name }}
-         {% if act == s.name %} 
-             {% assign s.number=s.number | plus: 1 }
-             {{ act }} {{ s.number }}
-             {% break %}
-         {% endif %}
-      {% endfor %} 
-   {% endfor %}
+{% for i in (0..nactions) %}
+   {% assign actionno[i]=actionno[i] | plumed actionno1[i] %}  
 {% endfor %}
-
-{% assign actionnumber = site.data.actionlist | map: "number" %}
 
 
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
 var xValues = [ {{ actionlist | join: '", "' | prepend: '"' | append: '"' }} ];
-var yValues = [ {{ actionnumber | join: ", " }} ];
+var yValues = [ {{ actionno | join: ", " }} ];
 var barColors = "red";
 
 new Chart("myChart", {
