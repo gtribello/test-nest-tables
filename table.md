@@ -15,14 +15,14 @@
    {% endfor %}
 {% endfor %}
 
-{% assign actionnumber = site.data.syntax | map: "number" %}
+{% assign actionnumber = site.data.actionlist | map: "number" %}
 
 
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
 var xValues = [ {{ actionlist | join: '", "' | prepend: '"' | append: '"' }} ];
-var yValues = [ {{ actionnumber | join: "," }} ];
+var yValues = [ {{ actionnumber | join: ", " }} ];
 var barColors = "red";
 
 new Chart("myChart", {
