@@ -9,6 +9,7 @@
       {% for s in site.data.actionlist %}
          {% if act == s.name %} 
              {% assign s.number=s.number | plus: 1 }
+             {{ act }} {{ s.number }}
              {% break %}
          {% endif %}
       {% endfor %} 
