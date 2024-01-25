@@ -5,10 +5,12 @@
 {% assign actionno1 = site.data.actionlist1 | map: "number" %}
 {% assign nactions=actionno0.size %}
 
-{% for i in (0..nactions) %}
-   {{ actionno[i] }}
-   {% assign actionno[i]=actionno[i] | plus: actionno1[i] %}  
-   {{ actionno[i] ))
+{% assign astr="" %}
+{% assign ano=actionno[0] | plus: actionno1[i] %}
+{% assign astr=astr | append: ano %}
+{% for i in (1..nactions) %}
+   {% assign ano=actionno[i] | plus: actionno1[i] %}  
+   {% assign astr=astr | append: ", " | append: ano %}
 {% endfor %}
 
 
@@ -16,7 +18,7 @@
 
 <script>
 var xValues = [ {{ actionlist | join: '", "' | prepend: '"' | append: '"' }} ];
-var yValues = [ {{ actionno | join: ", " }} ];
+var yValues = [ {{ astr | join: ", " }} ];
 var barColors = "red";
 
 new Chart("myChart", {
