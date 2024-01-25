@@ -6,7 +6,9 @@
 {% assign nactions=actionno0.size %}
 
 {% for i in (0..nactions) %}
+   {{ actionno[i] }}
    {% assign actionno[i]=actionno[i] | plus: actionno1[i] %}  
+   {{ actionno[i] ))
 {% endfor %}
 
 
