@@ -9,8 +9,8 @@
    {% for a in acts %}
       {% assign act=a | strip %} 
       {% for s in site.data.actionlist %}
-         {{ act }} {{ s.name }} {{ act==s.name }}
-         {% if act==s.name %} 
+         {{ act }} {{ s.name }} {{ act == s.name }}
+         {% if act == s.name %} 
              {% assign s.number=s.number | plus: 1 }
              {% break %}
          {% endif %}
