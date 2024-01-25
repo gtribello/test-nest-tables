@@ -7,6 +7,7 @@
    {% for a in acts %}
       {% assign act=a | strip %} 
       {% for s in site.data.actionlist %}
+         {{ act }}
          {% if act == s.name %} 
              {% assign s.number=s.number | plus: 1 }
              {{ act }} {{ s.number }}
