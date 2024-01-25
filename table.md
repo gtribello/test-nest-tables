@@ -3,7 +3,7 @@
 {% assign actionlist = site.data.actionlist0 | map: "name" %}
 {% assign actionno = site.data.actionlist0 | map: "number" %}
 {% assign actionno1 = site.data.actionlist1 | map: "number" %}
-{% assign nactions=actionno0.size %}
+{% assign nactions=actionno.size %}
 
 {% assign astr="" %}
 {% assign ano=actionno[0] | plus: actionno1[i] %}
