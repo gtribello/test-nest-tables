@@ -16,8 +16,7 @@
 
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
-<script>
-Chart.register(ChartjsPluginSorting)    
+<script>    
 var xValues = [ {{ actionlist | join: '", "' | prepend: '"' | append: '"' }} ];
 var yValues = [ {{ astr | join: ", " }} ];
 var barColors = "red";
@@ -40,6 +39,7 @@ new Chart("myChart", {
     }
   }
 });
+Chart.register(ChartjsPluginSorting) 
 </script>
 
 
