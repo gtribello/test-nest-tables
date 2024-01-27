@@ -22,6 +22,8 @@ var yValues = [ {{ astr | join: ", " }} ];
 var barColors = "red";
 
 new Chart("myChart", {
+  Chart.register(ChartjsPluginSorting) 
+   
   type: "horizontalBar",
   data: {
     labels: xValues,
