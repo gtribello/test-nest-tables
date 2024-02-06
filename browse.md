@@ -38,7 +38,7 @@ function querySt(ji) {
 var fieldName = querySt("fieldName");
 if( fieldName==null){ 
  } else { 
-    document.getElementById('#browse-table-searchbar').value = fieldName; 
+    document.getElementById('#browse-table').search( fieldName ).draw(); 
  } 
 }
 </script>
