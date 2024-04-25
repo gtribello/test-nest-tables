@@ -23,29 +23,9 @@ $('#browse-table-searchbar').keyup(function () {
   table.search( this.value ).draw();
   });
   hu = window.location.search.substring(1);
-  alert( hu );
   searchfor = hu.split("=");
-  alert(searchfor);
   if( searchfor[0]=="search" ) {
-      alert( searchfor[1] );
+      table.search( searchfor[1] ).draw();
   }
 });
-
-window.onload = function() {
-function querySt(ji) {
- hu = window.location.search.substring(1); 
- gy = hu.split("&");
- for (i=0;i<gy.length;i++) { 
-    ft = gy[i].split("="); 
-    if (ft[0] == ji) { 
-        return ft[1]; 
-    } 
- } 
-} 
-var fieldName = querySt("fieldName");
-if( fieldName==null){ 
- } else { 
-    document.getElementById('browse-table').search( fieldName ).draw(); 
- } 
-}
 </script>
