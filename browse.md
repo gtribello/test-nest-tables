@@ -23,7 +23,7 @@ $('#browse-table-searchbar').keyup(function () {
   table.search( this.value ).draw();
   });
   hu = window.location.search.substring(1);
-  searchfor = gy[i].split("=");
+  searchfor = hu.split("=");
   if( searchfor[0]=="search" ) {
       alert( searchfor[1] );
   }
