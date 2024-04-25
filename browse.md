@@ -23,7 +23,11 @@ $('#browse-table-searchbar').keyup(function () {
   table.search( this.value ).draw();
   });
   hu = window.location.search.substring(1);
-  alert( hu );
+  searchfor = gy[i].split("=");
+  if( searchfor==null ) {
+  } else {
+      alert( searchfor );
+  }
 });
 
 window.onload = function() {
