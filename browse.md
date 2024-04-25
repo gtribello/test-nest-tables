@@ -24,9 +24,8 @@ $('#browse-table-searchbar').keyup(function () {
   });
   hu = window.location.search.substring(1);
   searchfor = gy[i].split("=");
-  if( searchfor==null ) {
-  } else {
-      alert( searchfor );
+  if( searchfor[0]=="search" ) {
+      alert( searchfor[1] );
   }
 });
 
