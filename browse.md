@@ -24,6 +24,7 @@ $('#browse-table-searchbar').keyup(function () {
   });
   hu = window.location.search.substring(1);
   searchfor = hu.split("=");
+  alert(searchfor);
   if( searchfor[0]=="search" ) {
       alert( searchfor[1] );
   }
