@@ -22,6 +22,8 @@ var table = $('#browse-table').DataTable({
 $('#browse-table-searchbar').keyup(function () {
   table.search( this.value ).draw();
   });
+  hu = window.location.search.substring(1);
+  alert( hu );
 });
 
 window.onload = function() {
