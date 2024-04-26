@@ -1,0 +1,10 @@
+**PLUMED input files**  
+  
+| File     | Compatible with |  
+|:--------:|:--------:|  
+| [alanine/plumed-metad.dat](./data/alanine/plumed-metad.dat.md) |  [![tested on v2.9](https://img.shields.io/badge/v2.9-passing-green.svg)](data/alanine/plumed-metad.dat.plumed.stderr) [![tested on master](https://img.shields.io/badge/master-passing-green.svg)](data/alanine/plumed-metad.dat.plumed_master.stderr) |  
+| [alanine/plumed-ves.dat](./data/alanine/plumed-ves.dat.md) |  [![tested on v2.9](https://img.shields.io/badge/v2.9-passing-green.svg)](data/alanine/plumed-ves.dat.plumed.stderr) [![tested on master](https://img.shields.io/badge/master-passing-green.svg)](data/alanine/plumed-ves.dat.plumed_master.stderr) |  
+| [model/plumed-metad.dat](./data/model/plumed-metad.dat.md) |  [![tested on v2.9](https://img.shields.io/badge/v2.9-passing-green.svg)](data/model/plumed-metad.dat.plumed.stderr) [![tested on master](https://img.shields.io/badge/master-passing-green.svg)](data/model/plumed-metad.dat.plumed_master.stderr) |  
+| [model/plumed-ves.dat](./data/model/plumed-ves.dat.md) |  [![tested on v2.9](https://img.shields.io/badge/v2.9-passing-green.svg)](data/model/plumed-ves.dat.plumed.stderr) [![tested on master](https://img.shields.io/badge/master-passing-green.svg)](data/model/plumed-ves.dat.plumed_master.stderr) |  
+| [sodium/plumed-metad.dat](./data/sodium/plumed-metad.dat.md) |  [![tested on v2.9](https://img.shields.io/badge/v2.9-passing-green.svg)](data/sodium/plumed-metad.dat.plumed.stderr) [![tested on master](https://img.shields.io/badge/master-failed-red.svg)](data/sodium/plumed-metad.dat.plumed_master.stderr) [![with LOAD](https://img.shields.io/badge/with-LOAD-yellow.svg)]({{ "/" | absolute_url }}badges) |  
+| [sodium/plumed-ves.dat](./data/sodium/plumed-ves.dat.md) |  [![tested on v2.9](https://img.shields.io/badge/v2.9-passing-green.svg)](data/sodium/plumed-ves.dat.plumed.stderr) [![tested on master](https://img.shields.io/badge/master-failed-red.svg)](data/sodium/plumed-ves.dat.plumed_master.stderr) [![with LOAD](https://img.shields.io/badge/with-LOAD-yellow.svg)]({{ "/" | absolute_url }}badges) | 
