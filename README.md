@@ -9,3 +9,5 @@ Lets go [bussi](https://gtribello.github.io/test-nest-tables/browse.html?search=
 Lets go [DISTANCE](DISTANCE.md)
 
 Lets go [DUMPCONTOUR](DUMCONTOUR.md)
+
+<img src="https://img.shields.io/badge/v2.9-fail-0.0%-green.svg" alt="tested on v2.9" />
