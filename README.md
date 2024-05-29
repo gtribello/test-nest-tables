@@ -14,4 +14,4 @@ Lets go [DUMPCONTOUR](DUMCONTOUR.md)
 
 <img src="https://img.shields.io/badge/v2.9-failed-red.svg" alt="tested on v2.9" />
 
-$\abs{a - b}$
+$\vert a - b \vert$
