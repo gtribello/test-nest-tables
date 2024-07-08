@@ -1,5 +1,7 @@
 # This is the main page
 
+The date is {{ data }}
+
 Lets go [browse](browse.md)
 
 Lets go [table](table.md)
