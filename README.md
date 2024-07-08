@@ -1,6 +1,6 @@
 # This is the main page
 
-The date is {{ data }}
+The date is {{ date }}
 
 Lets go [browse](browse.md)
 
