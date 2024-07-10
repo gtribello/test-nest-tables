@@ -51,7 +51,6 @@ with PLUMED and GROMACS];
 Another graph
 
 ```mermaid
-```mermaid
 flowchart TB;
   A[Lecture I] ==> B[Instructions];
   A -.-> C[using pandas];
@@ -63,5 +62,4 @@ flowchart TB;
   click C "notebooks/plumed-pandas.html" "A python notebook file that illustrates how you can use pandas to read in COLVAR files that are generated with PLUMED"
   click D "video2.html" "A lecture that was given on January 25th 2021 as part of the plumed masterclass series that goes through the solutions to the exercises in the lesson"
   click E "notebooks/solution.html" "A python notebook file that provides a complete set of solutions to the exercises"
-```
 ```
