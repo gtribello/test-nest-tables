@@ -8,34 +8,33 @@
    
    You can return to a complete list of the tutorials by clicking [here](browse.md).
 
-   ```mermaid
-   
+   ```mermaid   
 flowchart TD
 0[Free energy calculations in
-crystalline solids]
+crystalline solids];
 1[PLUMED syntax and analysis]
-2[Metadynamics]
+2[Metadynamics];
 3[Rethinking Metadynamics using
-the OPES method]
+the OPES method];
 4[Modelling Concentration-driven
-processes with PLUMED]
+processes with PLUMED];
 5[Machine learning collective
-variables with PyTorch]
+variables with PyTorch];
 6[Analysis of Plumed output by
-Metadynminer]
+Metadynminer];
 7[Dimensionality reduction]
-8[Umbrella Sampling]
-9[Statistical errors in MD]
+8[Umbrella Sampling];
+9[Statistical errors in MD];
 10[SASA module - The solvent
 accessible surface area of
 proteins as a collective
 variable, and the application
 of PLUMED for implicit solvent
-simulations]
+simulations];
 11[Hamiltonian replica exchange
-with PLUMED and GROMACS]
-12[Replica exchange methods]
-13[Optimizing PLUMED performances]
+with PLUMED and GROMACS];
+12[Replica exchange methods];
+13[Optimizing PLUMED performances];
 1-->0;
 1-->4;
 1-->5;
