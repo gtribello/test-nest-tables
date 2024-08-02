@@ -28,7 +28,9 @@ $('#browse-table-searchbar').keyup(function () {
       allterms = searchfor[1].split(' ');
       alert( allterms );
       finalterm = allterms[0];
+      alert( finalterm );
       for(let i=1; i<allterms.length(); i++) { finalterm = finalterm + '&nbsp' + allterms[i]; }
+      alert( finalterm ); 
       table.search( finalterm ).draw();
   }
 });
