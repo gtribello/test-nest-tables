@@ -26,6 +26,7 @@ $('#browse-table-searchbar').keyup(function () {
   searchfor = hu.split("=");
   if( searchfor[0]=="search" ) {
       allterms = searchfor[1].split(' ');
+      alert( allterms );
       finalterm = allterms[0];
       for(let i=1; i<allterms.length(); i++) { finalterm = finalterm + " " + allterms[i]; }
       table.search( finalterm ).draw();
