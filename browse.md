@@ -25,7 +25,10 @@ $('#browse-table-searchbar').keyup(function () {
   hu = window.location.search.substring(1);
   searchfor = hu.split("=");
   if( searchfor[0]=="search" ) {
-      table.search( searchfor[1] ).draw();
+      allterms = searchfor[1].split(' ');
+      finalterm = allterms[0];
+      for(let i=1; i<allterms.length(); i++) { finalterm = finalterm + " " + allterms[i]; }
+      table.search( finalterm ).draw();
   }
 });
 </script>
