@@ -4,9 +4,7 @@
 | ID | Name | Instructors | Description | Actions |
 |:--------:|:--------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 {% for item in site.data.tabledata %}
-{% item.id == 23.004 %}
 | {{ item.id }} | [{{ item.title }}]({{ item.path }}) | {{ item.instructors | split: " " | last}} {{ item.instructors | split: " " | first | slice: 0}}. | {{ item.description }} | {{ item.actions }}
-{% endif %}
 {% endfor %}
 
 <script>
