@@ -1,4 +1,5 @@
-```mermaid   
+```mermaid
+%%{init: {"flowchart": { "width": 100%} } }%%
 flowchart TD
 0("bias")
 style 0 fill:green
