@@ -16,6 +16,8 @@ Lets go [graph](summarygraph.md)
 
 Lets go [new graph](test-graph-width.md)
 
+Lets go [timings](timings.md)
+
 <img src="https://img.shields.io/badge/v2.9-fail 0%25-green.svg" alt="tested on v2.9" />
 
 <img src="https://img.shields.io/badge/v2.9-failed-red.svg" alt="tested on v2.9" />
