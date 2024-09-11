@@ -1,4 +1,4 @@
- file containing lesson database.
+# file containing lesson database.
 - id: '22.017'
   title: A Bayesian approach to integrate cryo-EM data into MD simulations with PLUMED
   shortitle: 'A Bayesian appr...'
