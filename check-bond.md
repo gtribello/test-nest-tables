@@ -8,7 +8,7 @@ for CONTACT_MATRIX there are then a range of further analyses that you can perfo
 For this action the elements of the adjacency matrix are calculated using:
 
 $$
-a_{ij} = \sigma_{oo}( \mathbf{r}_{ij} ) \sum_{k=1}^N \sigma_{oh}( \mathbf{r}_{ik} ) \sigma_{\theta}( \theta_{kij} )
+a_{ij} = \sigma_{oo}( r_{ij} ) \sum_{k=1}^N \sigma_{oh}( r_{ik} ) \sigma_{\theta}( \theta_{kij} )
 $$
 
 This expression was derived by thinking about how to detect if there is a hydrogen bond between atoms $i$ and $j$.  The notion is that
