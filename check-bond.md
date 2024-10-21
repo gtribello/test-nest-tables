@@ -46,7 +46,7 @@ $$
 
 Some weird stuff
 
-such that $\tilde{k} _{\chi_0}(\chi_0)=1$
+such that $\tilde{k}_ {\chi_0}(\chi_0)=1$
 The above kernel is computed for each atom in the SPECIES or SPECIESA keywords.
 This quantity is a multicolvar so you can compute it for multiple atoms using a single PLUMED action and then compute
 the average value for the atoms in your system, the number of atoms that have an $\tilde{k}_{\chi_0}$ value that is more that some target and
