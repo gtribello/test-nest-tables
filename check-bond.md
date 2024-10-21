@@ -41,7 +41,7 @@ DUMPATOMS ATOMS=1-192:3 ARG=rsums FILE=donors.xyz
 An equation
 
 $$
-\rho_{ij} = \max_{m \in M} 
+\rho_{ij} = \max_{m \in M} \int_{(m-1)d_{\textrm{max}}/M}^{ md_{\textrm{max}} /M } \textrm{d}x
 $$
 
 $$
