@@ -41,7 +41,7 @@ DUMPATOMS ATOMS=1-192:3 ARG=rsums FILE=donors.xyz
 An equation
 
 $$
-\rho_{ij} = \max_{m \in M} \left[ \frac{M}{d_\textrm{max}} \right] \sum_k f(\mathbf{r}_{ik}, \mathbf{r}_{ij})
+\rho_{ij} = \max_{m \in M} \left[ \frac{M}{d_\textrm{max}} \right] \sum_k f(r_{ik}, r_{ij})
 $$
 
 $$
