@@ -37,3 +37,9 @@ ones: ONES SIZE=64
 rsums: MATRIX_VECTOR_PRODUCT ARG=mat,ones 
 DUMPATOMS ATOMS=1-192:3 ARG=rsums FILE=donors.xyz
 ```
+
+An equation
+
+$$
+\rho_{ij} = \max_{m \in M} \left[ \frac{M}{d_\textrm{max}} \sum_k f(\mathbf{r}_{ik}, \mathbf{r}_{ij}) \int_{(m-1)d_{\textrm{max}}/M}^{ md_{\textrm{max}} /M } \textrm{d}x K\left( x - \mathbf{r}_{ks} \cdot \mathbf{r}_{ij}} / | \mathbf{r}_{ks} | \right) \right]
+$$
