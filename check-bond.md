@@ -41,9 +41,6 @@ DUMPATOMS ATOMS=1-192:3 ARG=rsums FILE=donors.xyz
 An equation
 
 $$
-\rho_{ij} = \max_{m \in M} \left[ \frac{M}{d_\textrm{max}} \right] \sum_k f(r_{ik}, r_{ij}) \int_{(m-1)d_{\textrm{max}}/M}^{ md_{\textrm{max}} /M }
+\rho_{ij} = \max_{m \in M} \left[ \frac{M}{d_\textrm{max}} \right] \sum_k f(r_{ik}, r_{ij}) \int_{(m-1)d_{\textrm{max}}/M}^{ md_{\textrm{max}} /M } \textrm{d}x \quad K\left( \frac{x - r_{ks} \cdot r_{ij} }{ | r_{ks} | }\right) 
 $$
 
-$$
-   \textrm{d}x K\left( \frac{x - r_{ks} \cdot r_{ij} }{ | r_{ks} | }\right) 
-$$
