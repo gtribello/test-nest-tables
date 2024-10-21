@@ -45,5 +45,5 @@ $$
 $$
 
 $$
-   \textrm{d}x K\left( x - r_{ks} \cdot r_{ij} / | r_{ks} | \right) 
+   \textrm{d}x K\left( \frac{x - r_{ks} \cdot r_{ij} }{ | r_{ks} | }\right) 
 $$
