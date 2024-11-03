@@ -5,11 +5,11 @@ $$
 with
 
 $$
-com_\alpha(X)= \sum_i  \frac{w'_{i}}{\sum_j w'_j}X_{i,\alpha}
+com_{\alpha}(X)= \sum_i  \frac{w'_{i}}{\sum_j w'_j}X_{i,\alpha}
 $$
 
 and
 
 $$
-com_\alpha(X')= \sum_i  \frac{w'_{i}}{\sum_j w'_j}X'_{i,\alpha}
+com_{\alpha}(X')= \sum_i  \frac{w'_{i}}{\sum_j w'_j}X'_{i,\alpha}
 $$
