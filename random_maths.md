@@ -14,3 +14,13 @@ $$
 com_\alpha(X')= \sum_i  \frac{w'_{i}}{\sum_j w'_j}X' _{i,\alpha}
 $$
 
+$$
+\begin{align}
+X & = \frac{\sum_i X_i*\exp(-\lambda D_i(x))}{\sum_i  \exp(-\lambda D_i(x))} \\
+Y & = \frac{\sum_i Y_i*\exp(-\lambda D_i(x))}{\sum_i  \exp(-\lambda D_i(x))} \\
+& \cdots\\
+zzz & =-\frac{1}{\lambda}\log(\sum_i  \exp(-\lambda D_i(x)))
+\end{align}
+$$ 
+
+
