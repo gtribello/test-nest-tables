@@ -1,7 +1,7 @@
 EEF1 is a solvent-accessible surface area based model, where the free energy of solvation is computed using a pairwise interaction term for non-hydrogen atoms:
 
 $$
-    \Delta G^\mathrm{solv}_i = \Delta G^\mathrm{ref}_i - \sum_{j \neq i}
+\Delta G^\mathrm{solv}_i = \Delta G^\mathrm{ref} _i - \sum_{j \neq i}
 $$
 
 where $\Delta G^\mathrm{solv}_i$ is the free energy of solvation, $\Delta G^\mathrm{ref}_i$ is the reference solvation free energy, $V_j$ is the volume of atom $j$ and
