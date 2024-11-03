@@ -1,5 +1,5 @@
 with
 
 $$
-com_\alpha (X)
+com_\alpha (X) = \sum_i 
 $$
