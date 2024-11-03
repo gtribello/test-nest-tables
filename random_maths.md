@@ -1,5 +1,5 @@
 with
 
 $$
-com
+com_\alpha
 $$
