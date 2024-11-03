@@ -1,5 +1,5 @@
 with
 
 $$
-com_\alpha (X) = \sum_i \frac{w'_{i}}{\sum_j w'_j} X_i
+com_\alpha (X) = \sum_i \frac{w'_{i}}{\sum_j w'_j} X_\alpha
 $$
