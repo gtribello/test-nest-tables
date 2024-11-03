@@ -23,4 +23,8 @@ zzz & =-\frac{1}{\lambda}\log(\sum_i  \exp(-\lambda D_i(x)))
 \end{align}
 $$ 
 
+$$
+\AA
+$$
+
 
