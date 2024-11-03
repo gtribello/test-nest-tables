@@ -1,5 +1,5 @@
 with
 
 $$
-com_\alpha
+com_\alpha (X)
 $$
