@@ -1,5 +1,5 @@
 $$
-d(X,X') = \sqrt{ \sum_i \sum_\alpha^{x,y,z}  \frac{w_i}{\sum_j w_j} }
+d(X,X') = \sqrt{ \sum_i \sum_\alpha^{x,y,z}  \frac{w_i}{\sum_j w_j} ( X _{i,\alpha}-com _\alpha(X)-{X'} _{i,\alpha}+com _\alpha(X') )^2 }
 $$
 
 with
