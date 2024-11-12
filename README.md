@@ -26,6 +26,8 @@ Lets go [hbond](check-bond.md)
 
 $\vert a - b \vert$ 
 
+$s(r)=\frac{1-\left(\frac{r- d_0}{r_0}\right)^{n}}{1-\left(\frac{r-d_0}{r_0}\right)^{m}}$
+
 | TYPE | FUNCTION | EXAMPLE INPUT | DEFAULT PARAMETERS | NOTES
 |:----:|:--------:|:-------------:|:------------------:|:------------------:|
 | RATIONAL |  $s(r)=\frac{1-\left(\frac{r- d_0}{r_0}\right)^{n}}{1-\left(\frac{r-d_0}{r_0}\right)^{m}}$ | \{RATIONAL R_0=$r_0$ D_0=$d_0$ NN=$n$ MM=$m$\} | $d_0=0.0$, $n=6$, $m=2n$ | This is the most commonly used function and is highly optimised |
