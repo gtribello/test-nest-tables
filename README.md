@@ -35,12 +35,5 @@ $\vert a - b \vert$
 | Q | $s(r) = \frac{1}{1 + \exp(\beta(r_{ij} - \lambda r_{ij}^0))}$ | {Q REF=$r_{ij}^0$ BETA=$\beta$ LAMBDA=$\lambda$ } | $\lambda=1.8$, $\beta=50 nm^-1$ | You should use the default parameters here for all atom models  For a coarse grained model use $\lambda=1.5$, $\beta=50 nm^-1$ instead. }
 | CUBIC | $s(r) = (y-1)^2(1+2y) \qquad \textrm{where} \quad y = \frac{r - r_1}{r_0-r_1}$ | {CUBIC D_0=$r_1$ D_MAX=$r_0$} | $d_0=0$ | |
 | TANH | $s(r) = 1 - \tanh\left( \frac{ r - d_0 }{ r_0 } \right)$ | {TANH R_0=$r_0$ D_0=$d_0$} | $d_0=0$ | |
-| COSINUS | 
-$s(r) =\left\{\begin{array}{ll}
-   1                                                           & \mathrm{if } r \leq d_0 \\
-   0.5 \left( \cos ( \frac{ r - d_0 }{ r_0 } \pi ) + 1 \right) & \mathrm{if } d_0 < r\leq d_0 + r_0 \\
-   0                                                           & \mathrm{if } r > d_0 + r_0
-  \end{array}\right.
-$ | {COSINUS R_0=$r_0$ D_0=$d_0$} | |
 | CUSTOM | $s(r) = FUNC$ | {CUSTOM FUNC=1/(1+x^6) R_0=$r_0$ D_0=$d_0$} | $d_0=0$ | The input to the FUNC keyword can be written in terms of x or x2=$x^2$. Using x2 allows you to avoid the computationally-expensive square root operation. |
 | MATHEVAL | $s(r) = FUNC$ | {CUSTOM FUNC=1/(1+x^6) R_0=$r_0$ D_0=$d_0$} | $d_0=0$ | This is equivalent to CUSTOM above and is included to ensure backwards compatibility |
