@@ -10,7 +10,7 @@ $(document).ready(function() {
   searchfor = hu.split("=");
   if( searchfor[0]=="action" ) {
       alert( "Hello gareth found " + plumedsyntax[ searchfor[1] ]["description"] );
-      document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use \n\n" + searchfor[1] + " (action) " + "</b>";
+      document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use \n\n" + searchfor[1] + " (action) " + plumedsyntax[ searchfor[1] ]["description"] + "</b>";
   }  
 });
 </script>
