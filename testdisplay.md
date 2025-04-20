@@ -38,7 +38,6 @@ $('#browse-table-searchbar').keyup(function () {
   if( searchfor[0]=="search" ) {
       table.search( searchfor[1].replace("%20"," ") ).draw();
   } else if( searchfor[0]=="action" ) {
-      table.columns(4).search( "\\b" + searchfor[1] + "\\b", true, false, false ).draw();
       document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use \n\n" + searchfor[1] + " (action) description of action </b>";
 });
 </script>
