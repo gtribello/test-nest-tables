@@ -16,6 +16,11 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
 	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-flash-1.5.6/b-html5-1.5.6/datatables.min.js"></script>	
 	{% endif %}
+	{if page.url == "/testdisplay.html" %}
+        <script type="module">
+           import plumedsyntax from './syntax.0.json' assert { type: 'json' };
+	</script>
+	{% endif %}
         {% if page.url == "/table.html" %}
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Udemology/chartjs-plugin-sorting@main/chartjs-plugin-sorting.js"></script>	
