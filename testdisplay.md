@@ -30,7 +30,6 @@ var table = $('#browse-table').DataTable({
   });
 $('#browse-table-searchbar').keyup(function () {
   var page = location.href;
-  location.replace( page.split("?")[0] );
   table.search( this.value ).draw();
   });
   hu = window.location.search.substring(1);
