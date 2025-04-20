@@ -39,5 +39,6 @@ $('#browse-table-searchbar').keyup(function () {
   } else if( searchfor[0]=="action" ) {
       alert( "Hello gareth" );
       document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use \n\n" + searchfor[1] + " (action) " + plumedsyntax[searchfor[1]]["description"] + "</b>";
+  }  
 });
 </script>
