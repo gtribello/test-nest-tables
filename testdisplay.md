@@ -5,15 +5,18 @@
 {% endraw %}
 
 <script>
+async function getSyntax() {
+  const response await fetch('./syntax.0.json')
+  return response.json();
+}
+  
 $(document).ready(function() {
   hu = window.location.search.substring(1);
   searchfor = hu.split("=");
   if( searchfor[0]=="action" ) {
-      var description;
-      fetch('./syntax.0.json')
-        .then((response) => response.json())
-        .then((json) => desription = json[ searchfor[1] ]["description"] );
-      document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use </br></br>" + searchfor[1] + " (action) " + description + "</b>";
+      const syntax = await getSyntax();
+      console.log({ data });
+      document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use </br></br>" + searchfor[1] + " (action) " + "</b>";
   }  
 });
 </script>
