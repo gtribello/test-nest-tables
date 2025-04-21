@@ -16,8 +16,8 @@ $(document).ready(function() {
         }
         return response.json();
         })
-        .then(data => document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use </br></br>" + searchfor[1] + " (action) " + data[ searchfor[1] ]["description"] + "</b>" )
-      //document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use </br></br>" + searchfor[1] + " (action) " + "</b>";
+        .then(data => document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use </br></br>" + searchfor[1] + " (action): " + data[ searchfor[1] ]["description"] + ". <a href=\"" + data[ searchfor[1] ]["hyperlink"] + "\">More details</a></b>" )
+      
   }  
 });
 </script>
