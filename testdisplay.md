@@ -6,7 +6,7 @@
 
 <script>
 async function getSyntax() {
-  const response await fetch('./syntax.0.json')
+  const response = await fetch('./syntax.0.json')
   return response.json();
 }
   
