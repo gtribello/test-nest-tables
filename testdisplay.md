@@ -9,10 +9,11 @@ $(document).ready(function() {
   hu = window.location.search.substring(1);
   searchfor = hu.split("=");
   if( searchfor[0]=="action" ) {
+      var description;
       fetch('./syntax.0.json')
         .then((response) => response.json())
-        .then((json) => console.log(json));
-      document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use \n\n" + searchfor[1] + " (action) " + "</b>";
+        .then((json) => desription = json[ searchfor[1] ]["description"] );
+      document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use </br></br>" + searchfor[1] + " (action) " + description + "</b>";
   }  
 });
 </script>
