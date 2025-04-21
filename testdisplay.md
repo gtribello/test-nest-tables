@@ -5,12 +5,6 @@
 {% endraw %}
 
 <script>
-async function getSyntax() {
-  const response = await fetch('./syntax.0.json')
-  data = await 
-  return response.json();
-}
-  
 $(document).ready(function() {
   hu = window.location.search.substring(1);
   searchfor = hu.split("=");
