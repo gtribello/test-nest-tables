@@ -15,7 +15,7 @@ $(document).ready(function() {
   searchfor = hu.split("=");
   if( searchfor[0]=="action" ) {
       const syntax = getSyntax();
-      console.log({ data });
+      console.log({ syntax });
       document.getElementById("diplay_description").innerHTML = "<b>Showing lessons that use </br></br>" + searchfor[1] + " (action) " + "</b>";
   }  
 });
