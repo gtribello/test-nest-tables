@@ -9,7 +9,7 @@ $(document).ready(function() {
   hu = window.location.search.substring(1);
   searchfor = hu.split("=");
   if( searchfor[0]=="action" ) {
-      fetch(".syntax.0.json")
+      fetch("./syntax.0.json")
         .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
